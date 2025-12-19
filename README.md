@@ -45,11 +45,19 @@ Suivez ces étapes pour installer le projet localement :
 5. **Migrations**
     php artisan migrate
 
-6. **Lancer application avec 2 terminaux simultané**
+6. **Lancer application avec 2 TERMINAUX SIMULTANE**
     1. Laravel
         php artisan serve
     2. Vite - Compilation CSS
         npm run dev
+
+    
+Ce que j'aimerais améliorer : 
+Le style CSS, je suis allez vite alors je le trouve un peu basique.
+Sinon j'en ferais une application, avec la possibilité à l'utilisateur de se connecter, 
+de garder peut être des anciennes tâches, de créer des groupes de tâches également réutilisables.
+La possibilité de planifier des tâches à des dates futures. 
+
 
 Server sur : http://127.0.0.1:8000
 
