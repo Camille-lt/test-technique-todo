@@ -45,6 +45,7 @@ Suivez ces étapes pour installer le projet localement :
 5. **Migrations**
     php artisan migrate
 
+<!-- IMPORTANT -->
 6. **Lancer application avec 2 TERMINAUX SIMULTANE**
     1. Laravel
         php artisan serve
