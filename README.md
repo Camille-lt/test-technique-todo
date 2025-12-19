@@ -1,49 +1,55 @@
-# Todo App - Test Technique Laravel
+# Kanban App - Test Technique Laravel
 
-Application de gestion de tâches développée avec Laravel et MySQL.
+Une application de gestion de tâches de type **Kanban** moderne, développée avec **Laravel 11**, **SQLite** et **Tailwind CSS**.
 
-## Prérequis
+## 🚀 Fonctionnalités
 
-- PHP >= 8.0
-- Composer
-- MySQL
+- **Tableau de bord interactif** : Organisation des tâches en trois colonnes : *À Faire*, *En Cours* et *Terminées*.
+- **Gestion complète (CRUD)** : 
+    - Création de tickets avec titre et description.
+    - Système de progression de statut "Suivant" (Démarrer -> Terminer).
+    - Suppression définitive des tickets.
+- **Dates dynamiques** : Affichage de la date de création et suivi du temps écoulé depuis la modification via Carbon.
+- **Interface UI/UX** : 
+    - Design épuré inspiré de Jira/Trello.
+    - Arrière-plan personnalisé avec effet de flou (Glassmorphism) pour une meilleure lisibilité.
+    - Responsive Design (Mobile & Desktop).
 
-## Installation
+## 🛠️ Stack Technique
 
-1. Cloner le repository
-```bash
-git clone https://github.com/Camille-lt/test-technique-todo.git
-cd test-technique-todo
-```
+- **Framework** : Laravel 11
+- **Base de données** : SQLite (moteur léger et performant pour ce test)
+- **Frontend** : Blade & Tailwind CSS
+- **Compilation** : Vite
 
-2. Installer les dépendances
-```bash
-composer install
-```
+## 📥 Installation
 
-3. Configurer l'environnement
-```bash
-cp .env.example .env
-php artisan key:generate
-```
+Suivez ces étapes pour installer le projet localement :
 
-4. Configurer la base de données dans le fichier `.env`
+1. **Cloner le projet**
+   ```bash
+   git clone [https://github.com/Camille-lt/test-technique-todo.git](https://github.com/Camille-lt/test-technique-todo.git)
+   cd test-technique-todo
 
-5. Lancer les migrations
-```bash
-php artisan migrate
-```
+2. **Installer les dépendances (PHP et JS)**
+    composer install
+    npm install
 
-6. Lancer le serveur
-```bash
-php artisan serve
-```
+3. **Préparer l'environnement**
+    cp .env.example .env
+    php artisan key:generate
 
-L'application est accessible sur : `http://127.0.0.1:8000`
+4. **Préparer l'environnement Configuration de la base de données**
+    DB_CONNECTION=sqlite
 
-## Fonctionnalités
+5. **Migrations**
+    php artisan migrate
 
-- [ ] Lister des tâches
-- [ ] Ajouter une nouvelle tâche
-- [ ] Marquer une tâche comme terminée
-- [ ] Supprimer une tâche
+6. **Lancer application avec 2 terminaux simultané**
+    1. Laravel
+        php artisan serve
+    2. Vite - Compilation CSS
+        npm run dev
+
+Server sur : http://127.0.0.1:8000
+
